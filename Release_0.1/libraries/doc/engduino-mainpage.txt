@@ -1,0 +1,68 @@
+/**
+
+\mainpage The Engduino
+
+The Engduino is an inexpensive Arduino clone that is intended primarily
+for teaching schoolchildren about programming and system development in
+a way that is engaging, fun and that can integrate with other parts of
+their curriculum.
+
+To make things relatively straightforward, we have hidden a lot of details
+about the hardware in libraries which can be called from within a sketch in
+a relatively simple and straightforward way. This is Doxygen-generated
+documentation that provides the essential documentation of library
+functionality. It is not intended for children learning to program, but it
+provides a point of reference for the more sophisticated developer.
+
+There are 5 libraries for the Engduino, corresponding to the hardware devices
+connected.
+
+
+\section Engduino-mainpage-LEDs The LEDs
+The Engduino has 16 LEDs with independent red, green and blue channels. The
+LED driver is used to set the colour and brightness of the LEDs
+
+\sa \ref EngduinoLEDs "The Engduino LED Documentation"
+
+
+\section Engduino-mainpage-button The Button
+The Engduino has a single button. Unfortunately, when pressed, buttons bounce
+and so just reading the voltage on the pin connected to the button can be
+misleading. This library provides some code for 'debouncing' - in essence
+providing a reading of the button that is stable and accurately reflects
+whether it is pushed or not.
+
+\sa \ref EngduinoButton "The Engduino Button Documentation"
+
+
+\section Engduino-mainpage-thermistor The Thermistor
+The Engduino has a thermistor - which is a device whose resistance depends
+on the temperature. This is connected in such a way as to allow the Engduino
+to measure temperature. This library provides the ability to read the
+temperature in a number of forms: CELSIUS (default), KELVIN and FARENHEIT
+
+\sa \ref EngduinoThermistor "The Engduino Thermistor Documentation"
+
+
+\section Engduino-mainpage-accelerometer The Accelerometer
+The Engduino has a 3D accelerometer. As the name suggests, this allows
+one to read accelerations in each of 3 dimensions, which are defined in
+terms of the orientation of the accelerometer package. This is a library
+that simply returns the acceleration in each of those three dimensions.
+
+\sa \ref EngduinoAccelerometer "The Engduino Accelerometer Documentation"
+
+
+\section Engduino-mainpage-IR The IR
+Finally, the Engduino has the ability to communicate with another Engduino
+wirelessly - but using infra-red rather than radio, a bit like a remote
+control. The range of this communication is very short - a metre or so -
+but it is possible for the Engduino to pick up normal remote controls from
+a much greater distance.
+
+
+\sa \ref EngduinoIR "The Engduino Infrared Communications Documentation"
+
+
+
+*/
